@@ -14,6 +14,6 @@ func ExampleSentryRecovery() {
 	r.Use(scout.SentryRecovery)
 
 	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
-		panic("catched")
+		panic("caught")
 	})
 }
